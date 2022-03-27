@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+    </head>
+
+  
+    <!-- 
+        Enlaces-> conocidos tambien por links popularmente. Su objetivo
+        es conectar una pagina web con otra pagina web, con un recurso 
+        tanto interno como externo, o con otro sitio web
+
+        tienen el atributo obligatorio href, donde le especificamos la ruta
+        del recurso o sitio que queremos obtener
+
+        tambien tiene el atributo target, que configura como queremos
+        visualizar el recuros o sitio que solicitamos
+     
+         rutas absolutas:
+         Tienen un protocolo, http o https y son unicas en la red
+         se suelen utilizar para rutas externas
+
+         rutas relativas:
+         pueden ser relativas al punto donde nos encontramos o
+         relativas a la raiz del proyecto
+
+         no usan protocolo 
+
+         si el recurso se encuentra al mismo nivel (en la misma
+         carpeta) pondremos unicamente el nombre del archivo 
+
+         si necesitamos salir de la carpeta actual usaremos ../
+         y se pone uno por cada nivel (carpeta) de la que queramos salir
+
+         Atributos de los enlaces
+         target: define donde se abrira el recurso 
+         solicitado. Por norma general siempre que uses
+         rutas absolutas pondreis como valor "_blank"
+         
+         download: atributo booleano, sirve para descargar el
+         recurso solicitado.
+        Importante, el recurso debe estar en tu mismo servidor
+        -->
+
+<body>
+    <h1>home</h1>
+</nav>
+<p><a href="/paginas/blog.html#post-1">post 1</a></p>
+<p><a href="/paginas/blog.html#post-2">post 3</a></p>
+<p><a href=" /paginas/blog.html#post-3">post 2</a></p>
+<p><a href=" /paginas/blog.html#post-4">post 4</a></p>
+<p><a href=" /paginas/blog.html#post-5">post 5</a></p>
+<nav>
+    <a href="http://google.com" download>ir a contacto</a>
+    <a href="https://imagenes.20minutos.es/files/image_656_370/files/fp/uploads/imagenes/2021/04/20/imagen-de-archivo-de-un-gato-blanco.r_d.918-336.jpeg"download>descargar gatito</a>
+     <!-- <a href="https://google.com" target="_blank">ir a google</a>  -->
+</body>
+</html>

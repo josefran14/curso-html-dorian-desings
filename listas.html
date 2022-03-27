@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> listas</title>
+</head>
+
+<body>
+    
+    <!--  Las listas en HTML sirven para listar contenido. En
+        funcion del tipo de contenido de nuestra lista tenemos tres
+        tipos de listas 
+        
+        ul -> unordered: se utilizan cuando el orden de
+        los elementos no influye (lista de la compra)
+        
+        
+        ol-> ordered list: se utilizan cuando el orden de 
+        los elementos es importante (top 10)
+
+        Cada elemento de la lista se representa con la
+        etiqueta <li>, tanto en las ul como en las ol
+
+            se pueden construir listas aninadas teniendo en uno
+            de los li otro ul/ol segun sea necesario
+
+            ol
+               <li>
+                   HTML
+                   <ol>
+                       <li>estructura</li>
+                       <li>sintaxis</li>
+                       <li>etiquetas</li>
+                   </ol>
+                </li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+        
+        di-> definition list: se utilizan para hacer
+        una lista de definiciones (diccionario)
+
+        dt-> definition term: El termino que vamos
+        a definir
+
+        dd-> definition description: la descripcion del termino 
+        
+    -->
+    
+
+    <h1>listas</h1>
+</nav>
+<ul>
+<li><a href="#post-1">post 1</a></li>
+<li><a href="#post-2">post 2</a></li>
+<li><a href="#post-3">post 3</a></li>
+<li><a href="#post-4">post 4</a></li>
+<li><a href="#post-5">post 5</a></li>
+</ul>
+<nav>
+
+    <h2>lista de la compra</h2>
+    <ul>
+    <li>pan</li>
+         <li>huevos</li>
+         <li>leche</li>
+     </ul>
+    <h2>orden de aprendisaje en el desarrollo web</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h2>lenguajes para el desarrollo web</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>hyperText Markup language: es un lenguaje de marcado que usa para estructurar datos en una pagina web
+        </dd>
+
+        <dt>CSS</dt>
+        <dd>cascade style sheets: es un lenguaje de diseño que se utiliza para darv estilosal HTML</dd>
+
+        <dt>JavaScript</dt>
+        <dd>es un lengauje de programacion para dar interactividad a un sitio web</dd>
+    </dl>
+
+    <!-- 
+        Atributos de las listas
+
+        ol ->
+        type: estilo de numeracion (1, A, a, I, i)
+        start: estilo de los items (disc, square, circle)
+
+     -->
+     <h2>atributos en las listas</h2>
+     <ul type="circle">
+         <li>item</li>
+         <li>item</li>
+         <li>item</li>
+     </ul>
+
+     <ol type="A">
+         <li>item</li>
+         <li>item</li>
+         <li>item</li>
+     </ol>
+    
+        
+</body>
+    
+</html>

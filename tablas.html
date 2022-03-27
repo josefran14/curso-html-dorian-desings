@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+        
+    
+</head>
+
+<body>
+    
+    <!-- 
+        las tablas en HTML sirven para mostrar contenido tabulado
+
+        la estructura basica de una tabla se compone de
+        table -> etiqueta que encierra una tabla
+        tr -> table row, etiqueta que construye una fila
+        td -> table data, eitqueta que construye una celda
+
+        truco: el numero de celdas dentro de un id establecera
+        el numero de columnas de la tabla
+
+        El contenido de la tabla debe ir dentro de una 
+        etiqueta tbody para representar el cuerpo de la tabla
+
+        de forma opcional podemos colocar un tfoot a la
+        tabla para establecer un pie de tabla, esto es algo
+        que algunas tablas tienen como suma de cantidades o
+        total
+
+        para hacer que las celdas ocupen mas de una fila o
+        mas de una columna tenemos 2 atributos:
+        rowspan: sirve para que una celda ocupe mas de
+        una fila, el valor por defecto es 1
+        colspan: sirve para que una celda ocupe mas de
+        una columna, el valor por defecto es 1
+
+        cuando necesitamos seleccionar una columna, tenemos 
+        la etiqueta colgroup, que nos permite seleccionar 
+        una columna en concreto. Dentro pondremos tantas
+        etiquetas col como columnas tengamos, cada etiqueta 
+        col equivaldra a una columna siguiendo el mismo 
+        orden que tienen en la tabla
+
+        Si necesitamos que una etiqueta col agrupe mas de
+        una columna, tenemos el atributo span, que funciona
+        exactamente igual que rowspan y colspan
+
+     -->
+
+     <h1>tablas</h1>
+    
+     <table>
+         <caption>HORARIO DE CLASES</caption>
+         <colgroup></colgroup>
+         <col>
+         
+         <thead>
+         <tr>
+             <th></th>
+             <th>L</th>
+             <th>M</th>
+             <th>X</th>
+             <th>J</th>
+             <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <td>8:30 - 9:30</td>
+             <td>matematicas</td>
+             <td>matematicas</td>
+             <td>sociales</td>
+             <td>matematicas</td>
+             <td>matematicas</td>
+         <tr>
+         </tr>
+             <td>9:30 - 10:25</td>
+             <td>ingles</td>
+             <td>sociales</td>
+             <td>castellano</td>
+             <td>fisica</td>
+             <td>ingles</td>
+            </tr>
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>educacion fisica</td>
+                <td>quimica</td>
+                <td>fisica</td>
+                <td>ghc</td>
+                <td>matematicas</td>
+            </tr>
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td colspan="5">receso</td>
+            </tr>
+            <tr>
+                <td>11:45 - 12:40</td>
+              <td>bioogia</td>
+              <td>quimica</td>
+              <td>ingles</td>
+              <td>fsn</td>
+              <td>educacion fisica</td>
+            </tr>
+            <tr>
+                <td>12:40 - 13: 35</td>
+                <td>musica</td>
+                <td>ingles</td>
+                <td>informatica</td>
+                <td>quimica</td>
+                <td>sociales</td>
+            </tr>
+            <tr>
+                <td>13:35 - 14:40</td>
+                <td>castellano</td>
+                <td>ghc</td>
+                <td>fsn</td>
+                <td>informatica</td>
+                <td>musica</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="5">total de asignaturas</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+            
+             
+
+
+</body>
+</html>
